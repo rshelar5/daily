@@ -1,23 +1,27 @@
+import { MaterialModule } from './material/material.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppTodoComponent } from './components/app-todo/app-todo.component';
+import { TodoComponent } from './widgets/todo/todo.component';
+import { DynamicListComponent } from './components/dynamic-list/dynamic-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppTodoComponent
+    TodoComponent,
+    DynamicListComponent
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
     AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
   exports: [
-    AppTodoComponent
+
   ]
 })
 export class AppModule { }

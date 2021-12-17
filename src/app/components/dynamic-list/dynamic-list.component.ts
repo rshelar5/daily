@@ -15,15 +15,17 @@ import { MatPseudoCheckbox } from '@angular/material/core';
 })
 export class DynamicListComponent implements OnInit, OnChanges {
   constructor() {}
+  dataSource = ['aaa', 'bbb', 'ccc'];
   ngOnChanges(changes: SimpleChanges): void {
     console.log(changes);
   }
 
   currentValue: string | any;
   addNew(newEntry: any) {
+    if (newEntry.value === undefined || newEntry.value === '')
+      return;
     this.dataSource.unshift(newEntry.value);
     newEntry.value = '';
   }
-  dataSource = ['aaa', 'bbb', 'ccc'];
   ngOnInit(): void {}
 }

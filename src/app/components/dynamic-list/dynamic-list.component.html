@@ -1,2 +1,9 @@
-<input type="text">
-<button mat-button>Add</button>
+<div >
+  <input #newEntry  type="text">
+  <button mat-button (click)="addNew(newEntry)">Add</button>
+  <div *ngFor="let item of dataSource">
+    <mat-checkbox>{{item}}</mat-checkbox>
+  </div>
+
+
+</div>

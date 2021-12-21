@@ -1,0 +1,14 @@
+.main{
+  background-color: #424242;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+:host{
+background: #303030;
+display: flex;
+flex-direction: column;
+}

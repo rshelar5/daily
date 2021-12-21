@@ -1,3 +1,14 @@
+
+
+<div style="background:#303030 ;">
+  <div class="main">
+    <button mat-raised-button color="primary" style="margin-bottom: 10px;" (click)="onCreate()">Create Dairy</button>
+    <button mat-raised-button color="primary" (click)="onLoad()">Open Dairy</button>
+    <input hidden #fileSelector type="file" (change)="fileselected($event)">
+  </div>
+</div>
+
+
 <!-- <h2>Login</h2>
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="form-group">

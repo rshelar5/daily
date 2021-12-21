@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoComponent } from './widgets/todo/todo.component';
 import { DynamicListComponent } from './components/dynamic-list/dynamic-list.component';
+import { FirebaseModule } from './auth/google/firebase.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DynamicListComponent } from './components/dynamic-list/dynamic-list.com
   imports: [
     BrowserModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FirebaseModule
   ],
   providers: [],
   bootstrap: [AppComponent],

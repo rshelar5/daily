@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "users": [
+    {
+      "user": "THE_FIRST_ONE",
+      "appData": [
+        {
+          "appname": "TODO_APP",
+          "data": [
+            "aaa",
+            "bbb",
+            "ccc"
+          ]
+        }
+      ]
+    }
+  ]
+}
